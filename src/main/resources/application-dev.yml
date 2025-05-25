@@ -1,0 +1,31 @@
+server:
+  port: 9999
+spring:
+  batch:
+    job:
+      enabled: true
+    jdbc:
+      initialize-schema: always
+      table-prefix: cfg_job_
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root123
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 5
+      connection-timeout: 30000
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 100
+        order_inserts: true
+        order_updates: true
+        batch_versioned_data: true
+logging:
+  config: classpath:log4j2-spring-dev.xml
+app:
+  csv:
+    filepath: data/sample.csv  # CSV 文件路径（注意大文件时建议使用流式读取）
+    chunkSize: 1000         # Chunk 大小，可根据实际情况调整
