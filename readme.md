@@ -12,8 +12,12 @@ springbatch-eodcsv-import
 # Author
 Moshow郑锴@https://zhengkai.blog.csdn.net/ https://github.com/moshowgame
 
-# how to create spring batch meta data tables
-https://docs.spring.io/spring-batch/reference/schema-appendix.html#metaDataSchema`
 
 # how to run spring batch
 Run the EodCsvImportApplication directly
+
+# how to create spring batch meta data tables
+https://docs.spring.io/spring-batch/reference/schema-appendix.html#metaDataSchema`
+
+可以手工创建表
+https://github.com/spring-projects/spring-batch/blob/main/spring-batch-core/src/main/resources/org/springframework/batch/core/schema-postgresql.sql

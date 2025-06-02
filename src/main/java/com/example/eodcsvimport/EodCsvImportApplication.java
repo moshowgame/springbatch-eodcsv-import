@@ -11,6 +11,7 @@ import org.springframework.batch.core.configuration.annotation.EnableBatchProces
 public class EodCsvImportApplication {
 
     public static void main(String[] args) {
+        
         SpringApplication.run(EodCsvImportApplication.class, args);
     }
 }

@@ -27,5 +27,5 @@ logging:
   config: classpath:log4j2-spring-dev.xml
 app:
   csv:
-    filepath: data/sample.csv  # CSV 文件路径（注意大文件时建议使用流式读取）
+    filepath: D:\Workspace\Project\SpringBatchEODImport\src\main\resources\data\eod_import.csv  # CSV 文件路径（注意大文件时建议使用流式读取）
     chunkSize: 1000         # Chunk 大小，可根据实际情况调整
