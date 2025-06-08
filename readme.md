@@ -14,7 +14,12 @@ Moshow郑锴@https://zhengkai.blog.csdn.net/ https://github.com/moshowgame
 
 
 # how to run spring batch
+
 Run the EodCsvImportApplication directly
+- disable spring web , uncomment BatchJobRunner
+
+Run as Restful APIs
+- run directly , already in this mode
 
 # how to create spring batch meta data tables
 https://docs.spring.io/spring-batch/reference/schema-appendix.html#metaDataSchema`

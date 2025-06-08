@@ -29,7 +29,7 @@ import java.util.List;
 @Log4j2
 @Component
 @RequiredArgsConstructor
-public class EodCsvImportTasklet implements Tasklet {
+public class EodCsv2ImportTasklet implements Tasklet {
     @Autowired
     IEodRecordService eodRecordService;
     @Autowired
